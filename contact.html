@@ -12,7 +12,8 @@
       <!-- FONT FAMILY LINKS -->
       <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
       <!-- CSS LINK -->
-      <link rel = "stylesheet" type="text/css" href="css/styles-production.css">
+      <!-- <link rel = "stylesheet" type="text/css" href="css/styles-production.css"> -->
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
    <!-- End style links -->
 
 </head>
@@ -38,19 +39,27 @@
    </header>
    <main>
       <h1>Contact Peyton</h1>
-      <form action="" method="post" id="contact-form">
-         <label class="standard-label" for="contact-email">* E-mail: </label>
-         <input id="contact-email" type="email" required>
-         <br>
-         <label class="standard-label" for="contact-phone">* Phone: </label>
-         <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
-         <br>
-         <label class="standard-label" for="contact-message">* Message: </label>
-         <textarea id="contact-message" maxlength="240" required></textarea>
-         <br>
-         <input  type="submit" value="Send Message">
+      <form action="" method="post" class="contact-form">
+         <div class="contact-form__item">
+            <label class="standard-label" for="contact-email">* E-mail: </label>
+            <input id="contact-email" type="email" required>
+         </div>
+
+         <div class="contact-form__item">
+            <label class="standard-label" for="contact-phone">* Phone: </label>
+            <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+         </div>
+
+         <div class="contact-form__item">
+            <label class="standard-label" for="contact-message">* Message: </label>
+            <textarea id="contact-message" maxlength="240" required></textarea>
+         </div>
+
+         <div class="contact-form__item">
+            <input  type="submit" value="Send Message">
+         </div>
       </form>
-      <div>
+      <div class=contact-details>
          Peyton Crantford<br>
          Address Ave. 222<br>
          00000 Fort Collins, CO<br>
