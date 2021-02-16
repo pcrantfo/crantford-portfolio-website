@@ -138,12 +138,19 @@
    .page-footer {
      clear: both;
      display: flex;
-     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
      text-align: center;
      padding-top: 10px;
      border-top: 1px solid var(--secondary-color);
      margin-top: 50px;
    }
+
+   .contact-details {
+      font-size: 12px;
+      font-weight: var(--body-light);
+   }
+
 
    /* ABOUT PAGE */
 
@@ -220,11 +227,6 @@
       .contact-form__item {
          flex: 0 1 auto;
          margin-bottom: 5px;
-      }
-
-      .contact-details {
-         font-size: 12px;
-         font-weight: var(--body-light);
       }
 
    /* WORK PAGE */
@@ -347,5 +349,11 @@
 
       .profile__portrait {
          margin: 0;
+      }
+
+      .page-footer {
+         flex-direction: column;
+         justify-content: center;
+         align-items: space-around;
       }
    }
