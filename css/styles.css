@@ -141,9 +141,13 @@
      justify-content: space-around;
      align-items: center;
      text-align: center;
-     padding-top: 10px;
+     padding: 10px 0 20px 0;
      border-top: 1px solid var(--secondary-color);
      margin-top: 50px;
+   }
+
+   .page-footer p {
+      margin: 10px 0 5px 0;
    }
 
    .contact-details {
@@ -355,5 +359,9 @@
          flex-direction: column;
          justify-content: center;
          align-items: space-around;
+      }
+
+      .page-footer :nth-child(2) {
+         order:3;
       }
    }
