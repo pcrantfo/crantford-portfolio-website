@@ -28,31 +28,37 @@
      h1{
         /* font-family: 'Nunito Sans', sans-serif; */
         font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
      }
 
      h2{
         /* font-family: 'Nunito Sans', sans-serif; */
         font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
      }
 
      h3{
         /* font-family: 'Nunito Sans', sans-serif; */
         font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
      }
 
      h4{
         /* font-family: 'Nunito Sans', sans-serif; */
         font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
      }
 
      h5{
         /* font-family: 'Nunito Sans', sans-serif; */
         font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
      }
 
      h6{
         /* font-family: 'Nunito Sans', sans-serif; */
         font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
      }
 
      h1 {
@@ -117,8 +123,9 @@
 
    main {
      max-width: 700px;
-     margin: 0 auto;
+     margin: 25px auto 0 auto;
      text-align: center;
+     padding: 0 25px 0 25px;
    }
 
    main table {
@@ -126,13 +133,19 @@
    }
 
    .profile {
+      display: flex;
       text-align: left;
+   }
+
+   .profile__item {
+      flex: 0 1 auto;
+      flex-wrap: wrap;
    }
 
    .profile__portrait {
      width: 250px;
      height: auto;
-     float: left;
+     /* float: left; */
      margin-right: 40px;
      border-radius: 50%;
    }
@@ -140,14 +153,35 @@
    .page-footer {
      clear: both;
      display: flex;
-     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
      text-align: center;
-     padding-top: 10px;
+     padding: 10px 0 20px 0;
      border-top: 1px solid #b1afaf;
      margin-top: 50px;
    }
 
+   .page-footer p {
+      margin: 10px 0 5px 0;
+   }
+
+   .contact-details {
+      font-size: 12px;
+      font-weight: 300;
+   }
+
+
    /* ABOUT PAGE */
+
+      .berlin {
+         display: flex;
+         margin-top: 30px;
+      }
+
+      .berlin-illustration {
+         flex: 1 1 auto;
+         justify-content: center;
+      }
 
       @keyframes color-change {
          0% {
@@ -214,11 +248,6 @@
          margin-bottom: 5px;
       }
 
-      .contact-details {
-         font-size: 12px;
-         font-weight: 300;
-      }
-
    /* WORK PAGE */
 
       /* grid fallback */
@@ -239,6 +268,7 @@
          width: auto;
          min-height: auto;
          margin: 0;
+         text-align: left;
       }
 
       .grid__item:last-child {
@@ -335,16 +365,30 @@
       .grid {
          grid-template-columns: 1fr 1fr;
       }
-      .berlin-illustration {
-         transform: scale(0.75, 0.75);
-      }
    }
 
    @media all and (max-width: 500px) {
       .grid {
          grid-template-columns: 1fr;
       }
-      .berlin-illustration {
-         transform: scale(0.5, 0.5);
+
+      .profile {
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+      }
+
+      .profile__portrait {
+         margin: 0;
+      }
+
+      .page-footer {
+         flex-direction: column;
+         justify-content: center;
+         align-items: space-around;
+      }
+
+      .page-footer :nth-child(2) {
+         order:3;
       }
    }
