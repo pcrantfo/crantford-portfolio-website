@@ -150,6 +150,11 @@
       margin: 10px 0 5px 0;
    }
 
+   .page-footer img {
+      width: 30px;
+      height: 30px;
+   }
+
    .contact-details {
       font-size: 12px;
       font-weight: var(--body-light);
@@ -358,7 +363,6 @@
       .page-footer {
          flex-direction: column;
          justify-content: center;
-         align-items: space-around;
       }
 
       .page-footer :nth-child(2) {
