@@ -20,7 +20,7 @@ module.exports = {
     "no-extra-semicolons": true,
     "no-invalid-double-slash-comments": true,
     "property-no-unknown": true,
-    "property-no-vendor-prefix": false
+    "property-no-vendor-prefix": false,
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-no-unknown": true,
     "selector-type-no-unknown": true,
