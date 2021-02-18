@@ -3,77 +3,81 @@
 <!-- Access via URL:
 https://pcrantfo.github.io/crantford-portfolio-website OR divertible-gram.000webhostapp.com -->
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Crantford Portfolio</title>
-   <link rel = "shortcut icon" href="img/crantford-favicon.png">
-   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crantford Portfolio</title>
+  <link rel = "shortcut icon" href="img/crantford-favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-   <!-- Begin style links -->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <!-- FONT FAMILY LINKS -->
-      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-      <!-- CSS LINK -->
-      <link rel = "stylesheet" type="text/css" href="css/styles-production.css">
-      <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
-   <!-- End style links -->
-
+  <!-- Begin style links -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- FONT FAMILY LINKS -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- CSS LINK -->
+  <link rel = "stylesheet" type="text/css" href="css/styles-production.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+  <!-- End style links -->
 </head>
 <body>
-   <header class="page-header">
-      <img class="page-header__logo page-header__item" src = "img/crantford-logo.png" alt="Peyton Crantford's logo">
-      <nav class="main-navigation page-header__item">
-         <ul role="menubar" class="navigation-list">
-            <li role="presentation">
-               <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-            </li>
-            <li role="presentation">
-               <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-            </li>
-            <li role="presentation">
-               <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-            </li>
-            <li role="presentation">
-               <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-            </li>
-         </ul>
-      </nav>
-   </header>
-   <main>
-      <div class="profile">
-         <div class="profile__item">
-            <img class="profile__portrait" src="img/crantford-profile-cropped-square.jpg" alt="Photograph of Peyton Crantford">
-         </div>
-         <div class="profile__item">
-            <h1>Hello World!</h1>
-            <p>
-               My name is Peyton Crantford. I am a <span>web</span> developer from Colorado.
-            </p>
-            <a href="#">Check out some of my code</a>
-         </div>
-      </div>
-   </main>
-   <footer class="page-footer">
-      <div class="page-footer__item contact-details">
-         Peyton Crantford<br>
-         Address Ave. 222<br>
-         00000 Fort Collins, CO<br>
-         United States<br>
-      </div>
-      <div class="page-footer__item social-media">
-         <p>
-            Find me on
-         </p>
-         <img src="img/github-icon.svg" alt="Github logo">
-         <img src="img/twitter-icon.svg" alt="Twitter logo">
-         <img src="img/linkedin-icon.svg" alt="LinkedIn logo">
-      </div>
-      <div class="page-footer__item contact-details">
-         Tel <a href="tel:+22222222222">+1 222-222-2222</a><br>
-         <a href="mailto:email@gmail.com">email@gmail.com</a><br>
-         <a href="mailto:email@gmail.com">Contact me</a>
-      </div>
-   </footer>
-   <script src="js/tota11y.min.js"></script>
+  <header class="page-header">
+    <img class="page-header__logo page-header__logo page-header__item" src = "img/crantford-logo.png" alt="Peyton Crantford's logo">
+    <nav class="main-navigation page-header__item">
+      <button class="main-navigation__button" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul role="menubar" class="navigation-list" id="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <div class="profile">
+    <div class="profile__item">
+      <img class="profile__portrait" src="img/crantford-profile-cropped-square.jpg" alt="Photograph of Peyton Crantford">
+    </div>
+    <div class="profile__item">
+      <h1>Hello World!</h1>
+      <p>
+        My name is Peyton Crantford. I am a <span>web</span> developer from Colorado.
+      </p>
+      <a href="#">Check out some of my code</a>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__item contact-details">
+    Peyton Crantford<br>
+    Address Ave. 222<br>
+    00000 Fort Collins, CO<br>
+    United States<br>
+  </div>
+  <div class="page-footer__item social-media">
+    <p>
+      Find me on
+    </p>
+    <img src="img/github-icon.svg" alt="Github logo">
+    <img src="img/twitter-icon.svg" alt="Twitter logo">
+    <img src="img/linkedin-icon.svg" alt="LinkedIn logo">
+  </div>
+  <div class="page-footer__item contact-details">
+    Tel <a href="tel:+22222222222">+1 222-222-2222</a><br>
+    <a href="mailto:email@gmail.com">email@gmail.com</a><br>
+    <a href="mailto:email@gmail.com">Contact me</a>
+  </div>
+</footer>
+<!-- <script src="js/tota11y.min.js"></script> -->
+<script src="js/script.js"></script>
 </body>
 </html>

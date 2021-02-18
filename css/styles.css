@@ -76,6 +76,10 @@ body {
 
 .page-header {
   display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  background-color: var(--bg-color);
   width: 100%;
   padding: 20px;
   border-bottom: 1px solid var(--secondary-color);
@@ -96,7 +100,10 @@ body {
   text-align: right;
 }
 
+/* NAV WIDE */
+
 .navigation-list {
+  display: inline-block;
   list-style-type: none;
 }
 
@@ -109,9 +116,40 @@ body {
   align-items: flex-end;
 }
 
+#hamburger {
+  background-color: transparent;
+  color: var(--tertiary-color);
+  border: none;
+  display: none;
+  align-self: center;
+  padding: 16px 0;
+}
+
+#hamburger:focus {
+  outline: none;
+}
+
+/* NAV NARROW */
+
+@media all and (max-width: 500px) {
+  .navigation-list {
+    display: none;
+  }
+
+  #hamburger {
+    display: inline-block;
+  }
+
+  .navigation-list.show {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 main {
   max-width: 700px;
-  margin: 25px auto 0;
+  margin: 125px auto 0;
   text-align: center;
   padding: 0 25px;
 }
