@@ -6,11 +6,11 @@
   --bg-color: #fafafa;
   --body-light: 300;
   --body-regular: 400;
+  --header-medium: 500;
   --header-semi-bold: 600;
   --header-bold: 700;
-  --header-extra-bold: 800;
   --body-font: 'Open Sans', sans-serif;
-  --header-font: 'Nunito Sans', sans-serif;
+  --header-font: 'Raleway', sans-serif;
 }
 
 /*
@@ -51,17 +51,17 @@ h6 {
 
 h1 {
   font-size: 30px;
-  font-weight: var(--header-extra-bold);
+  font-weight: var(--header-bold);
 }
 
 h2 {
   font-size: 24px;
-  font-weight: var(--header-bold);
+  font-weight: var(--header-semi-bold);
 }
 
 h3 {
   font-size: 18px;
-  font-weight: var(--header-semi-bold);
+  font-weight: var(--header-medium);
 }
 
 /* COLOR STYLES */
