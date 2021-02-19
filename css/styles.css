@@ -176,28 +176,30 @@ main table {
 }
 
 .page-footer {
-  clear: both;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
   padding: 10px 0 20px;
   border-top: 1px solid var(--secondary-color);
   margin-top: 50px;
 }
 
+.page-footer__box {
+  max-width: 600px;
+  margin: 0 auto;
+  clear: both;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
 .page-footer p {
   margin: 10px 0 5px;
+  font-size: 12px;
+  font-weight: var(--body-light);
 }
 
 .page-footer img {
   width: 30px;
   height: 30px;
-}
-
-.contact-details {
-  font-size: 12px;
-  font-weight: var(--body-light);
 }
 
 /* ABOUT PAGE */
