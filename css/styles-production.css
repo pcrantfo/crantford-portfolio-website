@@ -27,53 +27,53 @@ body {
 
 h1 {
   /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
 }
 
 h2 {
   /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
 }
 
 h3 {
   /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
 }
 
 h4 {
   /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
 }
 
 h5 {
   /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
 }
 
 h6 {
   /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
 }
 
 h1 {
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* COLOR STYLES */
@@ -188,28 +188,30 @@ main table {
 }
 
 .page-footer {
-  clear: both;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
   padding: 10px 0 20px;
   border-top: 1px solid #b1afaf;
   margin-top: 50px;
 }
 
+.page-footer__box {
+  max-width: 600px;
+  margin: 0 auto;
+  clear: both;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
 .page-footer p {
   margin: 10px 0 5px;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .page-footer img {
   width: 30px;
   height: 30px;
-}
-
-.contact-details {
-  font-size: 12px;
-  font-weight: 300;
 }
 
 /* ABOUT PAGE */
@@ -326,6 +328,67 @@ margin: 5px;
   }
 }
 
+/* BUTTON STYLES */
+button {
+  border: none;
+  display: inline-block;
+  font-family: 500;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 17px;
+  border-radius: 5px;
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.button {
+  border: none;
+  display: inline-block;
+  font-family: 500;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 17px;
+  border-radius: 5px;
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.button-primary {
+  background-color: #1e2a3d;
+  color: #fafafa;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.button-secondary {
+  color: #d75744;
+  border: 2px solid #b1afaf;
+}
+
+#button__resume {
+  color: #d75744;
+  border: 2px solid #b1afaf;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.button-secondary:hover {
+  background-color: #b1afaf;
+  transition: 0.3s;
+}
+
+.button-secondary:focus {
+  background-color: #b1afaf;
+  transition: 0.3s;
+}
+
 /* LINK STYLES */
 a {
   color: #d75744;
@@ -348,52 +411,9 @@ a:active {
   text-decoration: none;
 }
 
-.button:visited {
-  color: #fafafa;
-}
-
 .navigation-list__item:visited {
   color: #d75744;
 }
-
-/* BUTTON STYLES */
-button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: #1e2a3d;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.3s opacity;
-}
-.button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: #1e2a3d;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.3s opacity;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-/* .button__secondary--disabled{
-background-color: #e0b354;
-color: #2b2b2b;
-} */
 
 /* MEDIA QUERIES */
 
@@ -437,7 +457,7 @@ color: #2b2b2b;
     margin: 0;
   }
 
-  .page-footer {
+  .page-footer__box {
     flex-direction: column;
     justify-content: center;
   }
