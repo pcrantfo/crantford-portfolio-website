@@ -363,7 +363,7 @@ button:focus,
 }
 
 .button-primary:visited {
-  color: var(--primary:color);
+  color: var(--primary-color);
 }
 
 .button-secondary:hover,
