@@ -267,9 +267,9 @@ main table {
 
 /* CONTACT PAGE */
 
-/* .contact-form__item {
-margin: 5px;
-} */
+label {
+  display: none;
+}
 
 .contact-form {
   display: flex;
