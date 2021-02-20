@@ -318,8 +318,7 @@ margin: 5px;
 
 /* BUTTON STYLES */
 button,
-.button,
-.submit-form {
+.button {
   border: none;
   display: inline-block;
   font-family: var(--header-medium);
@@ -329,6 +328,7 @@ button,
   border-radius: 5px;
   border-top: 1px solid rgba(0, 0, 0, 0);
   border-bottom: 1px solid rgba(0, 0, 0, 0);
+  line-height: 1.6;
 }
 
 .button-primary {
@@ -337,9 +337,8 @@ button,
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.button-secondary,
-.submit-form,
-#button__resume {
+.button-secondary {
+  background-color: var(--bg-color);
   color: var(--tertiary-color);
   border: 1px solid var(--secondary-color);
 }
@@ -352,8 +351,8 @@ button,
 
 button:hover,
 button:focus,
-.submit-form:hover,
-.submit-form:focus {
+.button:hover,
+.button:focus {
   cursor: pointer;
 }
 
