@@ -363,12 +363,21 @@ button:focus,
   transition: 0.3s;
 }
 
+.button-primary:visited {
+  color: var(--primary:color);
+}
+
 .button-secondary:hover,
 .button-secondary:focus,
 .button-tertiary:hover,
 .button-tertiary:focus {
   background-color: var(--secondary-color);
   transition: 0.3s;
+}
+
+.button-secondary:visited,
+.button-tertiary:visited {
+  color: var(--tertiary-color);
 }
 
 /* LINK STYLES */
