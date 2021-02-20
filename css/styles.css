@@ -344,6 +344,12 @@ button,
   border: 1px solid var(--secondary-color);
 }
 
+.button-tertiary,
+.button-tertiary__anchor {
+  background-color: var(--bg-color);
+  color: var(--tertiary-color);
+}
+
 button:hover,
 button:focus,
 .submit-form:hover,
@@ -352,17 +358,15 @@ button:focus,
 }
 
 .button-primary:hover,
-.button-primary:focus,
-.submit-form:hover,
-.submit-form:focus {
+.button-primary:focus {
   opacity: 0.9;
   transition: 0.3s;
 }
 
 .button-secondary:hover,
 .button-secondary:focus,
-.submit-form:hover,
-.submit-form:focus {
+.button-tertiary:hover,
+.button-tertiary:focus {
   background-color: var(--secondary-color);
   transition: 0.3s;
 }
