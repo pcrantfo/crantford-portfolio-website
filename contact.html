@@ -47,19 +47,30 @@
         <fieldset class="contact-form__fieldset">
           <legend class="contact-form__header">Information</legend>
 
-        <div class="contact-form__item">
-          <label class="standard-label" for="contact-phone">* Phone: </label>
-          <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
-        </div>
+          <div class="contact-form__item">
+            <label class="standard-label" for="contact-name"></label>
+            <input id="contact-name" type="email" placeholder="Your Name *" required>
+          </div>
 
-        <div class="contact-form__item">
-          <label class="standard-label" for="contact-message">* Message: </label>
-          <textarea id="contact-message" maxlength="240" required></textarea>
-        </div>
+          <div class="contact-form__item">
+            <label class="standard-label" for="contact-email"></label>
+            <input id="contact-email" type="email" placeholder="email *" required>
+          </div>
 
-        <div class="contact-form__item">
-          <input  class="button button-secondary" type="submit" value="SEND MESSAGE">
-        </div>
+          <div class="contact-form__item">
+            <label class="standard-label" for="contact-phone"></label>
+            <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Phone: xxx-xxx-xxxx *" required>
+          </div>
+
+          <div class="contact-form__item">
+            <label class="standard-label" for="contact-message"></label>
+            <textarea id="contact-message" maxlength="240" placeholder="Message *" required></textarea>
+          </div>
+
+          <div class="contact-form__item">
+            <input  class="button button-primary" type="submit" value="SEND MESSAGE">
+          </div>
+        </fieldset>
       </form>
     </main>
     <footer class="page-footer">

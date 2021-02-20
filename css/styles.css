@@ -274,9 +274,12 @@ margin: 5px;
 .contact-form {
   display: flex;
   width: 100%;
-  margin-bottom: 50px;
+  margin: 15px 0 50px;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
 .contact-form__fieldset {
   width: 50%;
   border: none;
@@ -293,7 +296,27 @@ margin: 5px;
 
 .contact-form__item {
   flex: 0 1 auto;
-  padding: 10px 0;
+  padding: 15px 0;
+}
+
+#contact-name,
+#contact-email,
+#contact-phone,
+#contact-message {
+  width: 100%;
+  margin: 0;
+	outline: 0;
+  border: none;
+	padding: 10px;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+#contact-name:focus,
+#contact-email:focus,
+#contact-phone:focus,
+#contact-message:focus {
+  background-color: var(--bg-color-highlight);
 }
 
 /* WORK PAGE */
