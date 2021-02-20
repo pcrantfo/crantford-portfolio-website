@@ -282,7 +282,7 @@ margin: 5px;
 
 .contact-form__item {
   flex: 0 1 auto;
-  margin-bottom: 5px;
+  padding: 10px 0;
 }
 
 /* WORK PAGE */
@@ -318,7 +318,8 @@ margin: 5px;
 
 /* BUTTON STYLES */
 button,
-.button {
+.button,
+.submit-form {
   border: none;
   display: inline-block;
   font-family: var(--header-medium);
@@ -337,24 +338,31 @@ button,
 }
 
 .button-secondary,
+.submit-form,
 #button__resume {
   color: var(--tertiary-color);
   border: 1px solid var(--secondary-color);
 }
 
 button:hover,
-button:focus {
+button:focus,
+.submit-form:hover,
+.submit-form:focus {
   cursor: pointer;
 }
 
 .button-primary:hover,
-.button-primary:focus {
+.button-primary:focus,
+.submit-form:hover,
+.submit-form:focus {
   opacity: 0.9;
   transition: 0.3s;
 }
 
 .button-secondary:hover,
-.button-secondary:focus {
+.button-secondary:focus,
+.submit-form:hover,
+.submit-form:focus {
   background-color: var(--secondary-color);
   transition: 0.3s;
 }
