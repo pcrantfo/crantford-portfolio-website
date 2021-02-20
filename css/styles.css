@@ -403,10 +403,15 @@ button:focus,
 }
 
 .button-secondary:hover,
-.button-secondary:focus,
+.button-secondary:focus {
+  background-color: var(--bg-color-highlight);
+  border: 1px solid var(--bg-color-highlight);
+  transition: 0.3s;
+}
+
 .button-tertiary:hover,
 .button-tertiary:focus {
-  background-color: var(--secondary-color);
+  background-color: var(--bg-color-highlight);
   transition: 0.3s;
 }
 
