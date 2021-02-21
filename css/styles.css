@@ -39,7 +39,6 @@ Open Sans — 300(Light), 400(Regular)
 }
 
 body {
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: var(--body-font);
   font-size: 16px;
   font-weight: var(--body-regular);
@@ -53,7 +52,6 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: 'Nunito Sans', sans-serif; */
   font-family: var(--header-font);
   line-height: 1;
 }
@@ -80,7 +78,7 @@ h3 {
 
 .page-header {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   position: fixed;
   top: 0;
   background-color: var(--bg-color);
@@ -440,8 +438,7 @@ a:active {
     width: 150px;
   }
 
-  .page-footer__item:n
-  th-child(1) {
+  .page-footer__item:nth-child(1) {
     padding-left: 15%;
   }
 
