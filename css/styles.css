@@ -331,7 +331,7 @@ button,
 .button {
   border: none;
   display: inline-block;
-  font-family: var(--header-medium);
+  font-weight: var(--header-medium);
   font-size: 14px;
   text-decoration: none;
   padding: 5px 16px;
