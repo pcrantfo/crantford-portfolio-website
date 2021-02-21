@@ -216,9 +216,23 @@ main table {
 
 /* ABOUT PAGE */
 
+thead :first-child :first-child {
+  border-top-left-radius: 5px;
+  }
+
+thead :first-child :last-child {
+  border-top-right-radius: 5px;
+  }
+
+tbody :last-child :first-child {
+  border-bottom-left-radius: 5px;
+  }
+
+tbody :last-child :last-child {
+  border-bottom-right-radius: 5px;
+  }
+
 table {
-  border: 1px solid var(--secondary-color);
-  border-radius: 5px;
   text-align: left;
   border-collapse: collapse;
 }
@@ -226,16 +240,19 @@ table {
 thead {
   font-size: 18px;
   font-weight: var(--header-semi-bold);
-  background-color: var(--tertiary-color);
   color: var(--bg-color);
+}
+
+thead tr {
+  background-color: var(--tertiary-color);
+}
+
+tr {
+  background-color: var(--bg-color);
 }
 
 tr:nth-of-type(even) {
   background-color: var(--bg-color-highlight);
-}
-
-tr:last-child {
-  border: none;
 }
 
 td {
