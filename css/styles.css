@@ -216,6 +216,34 @@ main table {
 
 /* ABOUT PAGE */
 
+table {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+thead {
+  font-size: 18px;
+  font-weight: var(--header-semi-bold);
+  background-color: var(--tertiary-color);
+  color: var(--bg-color);
+}
+
+tr:nth-of-type(even) {
+  background-color: var(--bg-color-highlight);
+}
+
+tr:last-child {
+  border: none;
+}
+
+td {
+  padding: .75em;
+}
+
+
+
 /* CONTACT PAGE */
 
 label {
