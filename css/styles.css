@@ -283,8 +283,8 @@ label {
   margin: 0;
 	outline: 0;
   border: none;
+  background-color: transparent;
 	padding: 10px;
-  background-color: var(--bg-color);
   border-bottom: 1px solid var(--secondary-color);
 }
 
