@@ -31,6 +31,13 @@ body
 Open Sans — 300(Light), 400(Regular)
 
 */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+}
+
 body {
   /* font-family: 'Open Sans', sans-serif; */
   font-family: var(--body-font);
