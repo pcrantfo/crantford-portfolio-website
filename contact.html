@@ -19,70 +19,78 @@
 
   </head>
   <body>
-    <header class="page-header">
-      <img class="page-header__logo page-header__logo page-header__item" src = "img/crantford-logo.png" alt="Peyton Crantford's logo">
-      <nav class="main-navigation page-header__item">
-        <button class="main-navigation__button" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-        <ul role="menubar" class="navigation-list" id="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Contact Peyton</h1>
-      <form action="#" method="post" class="contact-form">
-        <div class="contact-form__item">
-          <label class="standard-label" for="contact-email">* E-mail: </label>
-          <input id="contact-email" type="email" required>
-        </div>
+    <div class="container">
+      <header class="page-header">
+        <img class="page-header__logo page-header__logo page-header__item" src = "img/crantford-logo.png" alt="Peyton Crantford's logo">
+        <nav class="main-navigation page-header__item">
+          <button class="main-navigation__button" id="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul role="menubar" class="navigation-list" id="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+            </li>
+            <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="mountains-img">
+        <img src="img/mountains.svg" alt="A vector image of mountains">
+      </div>
+      <main>
+        <h1>Contact Peyton</h1>
+        <form action="#" method="post" class="contact-form">
+          <fieldset class="contact-form__item contact-form__fieldset">
+            <legend class="contact-form__header"><h2>Information</h2></legend>
 
-        <div class="contact-form__item">
-          <label class="standard-label" for="contact-phone">* Phone: </label>
-          <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
-        </div>
+            <div class="contact-form__item">
+              <label class="standard-label" for="contact-name"></label>
+              <input id="contact-name" type="email" placeholder="Your Name *" required>
+            </div>
 
-        <div class="contact-form__item">
-          <label class="standard-label" for="contact-message">* Message: </label>
-          <textarea id="contact-message" maxlength="240" required></textarea>
-        </div>
+            <div class="contact-form__item">
+              <label class="standard-label" for="contact-email"></label>
+              <input id="contact-email" type="email" placeholder="email *" required>
+            </div>
 
-        <div class="contact-form__item">
-          <input  type="submit" value="Send Message">
-        </div>
-      </form>
-    </main>
-    <footer class="page-footer">
-      <section class=page-footer__box>
-        <div class="page-footer__item">
-          <p>
-            Find me on Github
-          </p>
-          <a href="https://github.com/pcrantfo" target="_blank"><img src="img/github-icon.svg" alt="Github logo"></a>
-        </div>
-        <div class="page-footer__item contact-details">
-          <a href="contact.html">Let's talk</a>
-        </div>
-        <div class="page-footer__item">
-          <p>
-            Follow my career
-          </p>
-          <a href="https://www.linkedin.com/in/peytoncrantford/" target="_blank"><img src="img/linkedin-icon.svg" alt="LinkedIn logo"></a>
-        </div>
-      </section>
-    </footer>
+            <div class="contact-form__item">
+              <label class="standard-label" for="contact-phone"></label>
+              <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Phone: xxx-xxx-xxxx *" required>
+            </div>
+
+            <div class="contact-form__item">
+              <label class="standard-label" for="contact-message"></label>
+              <textarea id="contact-message" maxlength="240" placeholder="Message *" required></textarea>
+            </div>
+
+            <div class="contact-form__item">
+              <input  class="button button-primary" type="submit" value="SEND MESSAGE">
+            </div>
+          </fieldset>
+        </form>
+      </main>
+      <footer class="page-footer">
+        <section class=page-footer__box>
+          <div class="page-footer__item">
+            <a href="https://github.com/pcrantfo" target="_blank"><img src="img/github-icon.svg" alt="Github logo"></a>
+          </div>
+          <div class="page-footer__item">
+            <a href="https://www.linkedin.com/in/peytoncrantford/" target="_blank"><img src="img/linkedin-icon.svg" alt="LinkedIn logo"></a>
+          </div>
+          <div class="page-footer__item page-footer__contact">
+            <a class="button button-tertiary" href="contact.html">CONTACT ME</a>
+          </div>
+        </section>
+      </footer>
+    </div>
     <!-- <script src="js/tota11y.min.js" charset="utf-8"></script> -->
     <script src="js/script.js"></script>
   </body>
