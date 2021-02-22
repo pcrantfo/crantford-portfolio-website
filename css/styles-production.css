@@ -18,12 +18,6 @@ Open Sans — 300(Light), 400(Regular)
 
 */
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column wrap;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -35,31 +29,37 @@ body {
 h1 {
   font-family: 'Raleway', sans-serif;
   line-height: 1;
+  margin: 1.5em 0 1em;
 }
 
 h2 {
   font-family: 'Raleway', sans-serif;
   line-height: 1;
+  margin: 1.5em 0 1em;
 }
 
 h3 {
   font-family: 'Raleway', sans-serif;
   line-height: 1;
+  margin: 1.5em 0 1em;
 }
 
 h4 {
   font-family: 'Raleway', sans-serif;
   line-height: 1;
+  margin: 1.5em 0 1em;
 }
 
 h5 {
   font-family: 'Raleway', sans-serif;
   line-height: 1;
+  margin: 1.5em 0 1em;
 }
 
 h6 {
   font-family: 'Raleway', sans-serif;
   line-height: 1;
+  margin: 1.5em 0 1em;
 }
 
 h1 {
@@ -80,6 +80,12 @@ h3 {
 /* POSITIONING */
 * {
   box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .page-header {
@@ -239,6 +245,7 @@ tbody :last-child :last-child {
   }
 
 table {
+  margin: 30px 0;
   text-align: left;
   border-collapse: collapse;
 }
@@ -265,8 +272,6 @@ td {
   padding: .75em;
 }
 
-
-
 /* CONTACT PAGE */
 
 label {
@@ -287,7 +292,7 @@ label {
   border-top: 1px solid #b1afaf;
 }
 
-.contact-form__header {
+.contact-form__header h2 {
   margin: 0;
   padding: 0 5px;
   color: #d75744;

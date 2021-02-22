@@ -32,12 +32,6 @@ Open Sans — 300(Light), 400(Regular)
 
 */
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column wrap;
-}
-
 body {
   font-family: var(--body-font);
   font-size: 16px;
@@ -54,6 +48,7 @@ h5,
 h6 {
   font-family: var(--header-font);
   line-height: 1;
+  margin: 1.5em 0 1em;
 }
 
 h1 {
@@ -74,6 +69,12 @@ h3 {
 /* POSITIONING */
 * {
   box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .page-header {
@@ -233,6 +234,7 @@ tbody :last-child :last-child {
   }
 
 table {
+  margin: 30px 0;
   text-align: left;
   border-collapse: collapse;
 }
@@ -259,8 +261,6 @@ td {
   padding: .75em;
 }
 
-
-
 /* CONTACT PAGE */
 
 label {
@@ -281,7 +281,7 @@ label {
   border-top: 1px solid var(--secondary-color);
 }
 
-.contact-form__header {
+.contact-form__header h2 {
   margin: 0;
   padding: 0 5px;
   color: var(--tertiary-color);
