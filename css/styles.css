@@ -261,8 +261,6 @@ td {
   padding: .75em;
 }
 
-
-
 /* CONTACT PAGE */
 
 label {
@@ -283,7 +281,7 @@ label {
   border-top: 1px solid var(--secondary-color);
 }
 
-.contact-form__header {
+.contact-form__header h2 {
   margin: 0;
   padding: 0 5px;
   color: var(--tertiary-color);
